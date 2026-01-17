@@ -1,0 +1,39 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "description": "Beekeeper Studio - Development Configuration",
+    "license": {
+        "bypass": true,
+        "edition": "ultimate",
+        "_comment": "Set bypass to true to skip cloud license validation. Edition can be: 'ultimate', 'community', or 'trial'"
+    },
+    "ai": {
+        "defaultProvider": "ollama",
+        "providers": {
+            "ollama": {
+                "baseUrl": "http://localhost:11434",
+                "model": "llama3.2"
+            },
+            "groq": {
+                "apiKey": "",
+                "model": "llama-3.3-70b-versatile"
+            },
+            "gemini": {
+                "apiKey": "",
+                "model": "gemini-2.0-flash-exp"
+            },
+            "openai": {
+                "apiKey": "",
+                "model": "gpt-4o"
+            },
+            "openrouter": {
+                "apiKey": "",
+                "model": "anthropic/claude-3.5-sonnet"
+            }
+        }
+    },
+    "_notes": [
+        "This file is for DEVELOPMENT ONLY",
+        "DO NOT commit this file to git",
+        "Copy dev-config.example.json to dev-config.json to customize"
+    ]
+}
