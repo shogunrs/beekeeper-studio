@@ -26,110 +26,220 @@
         bottom: 0;
         margin: 0;
         padding: 0;
-        background: transparent;
+        background: #121212;
         overflow: hidden;
       }
 
       .app-loading {
-        position: absolute;
-        top: 0;
-        right: 0;
-        left: 0;
-        bottom: 0;
-        display: table;
-        width: 100%;
-        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         -webkit-app-region: drag;
       }
 
       .preloader-wrap {
-        font-family: system-ui,
-          -apple-system, BlinkMacSystemFont,
-          "Segoe UI",
-          "Roboto",
-          "Oxygen",
-          "Ubuntu",
-          "Cantarell",
-          "Fira Sans",
-          "Droid Sans",
-          "Helvetica Neue",
-          Arial, sans-serif;
-        display: table-cell;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", sans-serif;
         text-align: center;
-        vertical-align: middle;
-        color: #999;
+        color: rgba(255, 255, 255, 0.6);
         font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 2px;
       }
 
-      .preloader {
-        height: 100px;
+      /* Jellyfish Container */
+      .jellyfish {
         position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 6px;
+        width: 80px;
+        height: 120px;
+        margin-bottom: 30px;
+        animation: float 3s ease-in-out infinite;
       }
 
-      .preloader .layer {
-        display: block;
+      /* Jellyfish Head/Bell */
+      .jelly-head {
         position: absolute;
-        height: 50px;
-        width: 50px;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 70px;
+        height: 45px;
+        background: linear-gradient(180deg, #00e5ff 0%, #00bcd4 50%, #8b5cf6 100%);
+        border-radius: 50% 50% 40% 40%;
+        box-shadow:
+          0 0 30px rgba(0, 188, 212, 0.5),
+          0 0 60px rgba(139, 92, 246, 0.3),
+          inset 0 -10px 20px rgba(139, 92, 246, 0.4);
+        animation: pulse 2s ease-in-out infinite;
+      }
+
+      .jelly-head::before {
+        content: '';
+        position: absolute;
+        top: 8px;
+        left: 15px;
+        width: 15px;
+        height: 10px;
+        background: rgba(255, 255, 255, 0.4);
         border-radius: 50%;
-        box-shadow: 1px 1px #00BCD4,
-          1px 2px rgba(0, 0, 0, 0.25);
-        transform: rotateX(50deg) rotateY(0deg) rotateZ(45deg);
       }
 
-      .preloader .layer:nth-of-type(1) {
-        background: rgba(0, 188, 212, 0.65);
-        margin-top: 36px;
-        animation: movedown 0.8s cubic-bezier(0.39, 0.575, 0.565, 1) 0.4s infinite normal;
+      /* Tentacles Container */
+      .tentacles {
+        position: absolute;
+        top: 40px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 6px;
+        justify-content: center;
       }
 
-      .preloader .layer:nth-of-type(2) {
-        background: rgba(0, 188, 212, 0.65);
-        margin-top: 18px;
+      /* Individual Tentacle */
+      .tentacle {
+        width: 4px;
+        height: 60px;
+        background: linear-gradient(180deg, #00bcd4 0%, #8b5cf6 50%, transparent 100%);
+        border-radius: 0 0 4px 4px;
+        transform-origin: top center;
+        animation: wave 2s ease-in-out infinite;
       }
 
-      .preloader .layer:nth-of-type(3) {
-        background: rgba(139, 92, 246, 0.75);
-        animation: moveup 0.8s cubic-bezier(0.39, 0.575, 0.565, 1) infinite normal;
+      .tentacle:nth-child(1) {
+        animation-delay: 0s;
+        height: 55px;
       }
 
-      @keyframes moveup {
+      .tentacle:nth-child(2) {
+        animation-delay: 0.15s;
+        height: 65px;
+      }
+
+      .tentacle:nth-child(3) {
+        animation-delay: 0.3s;
+        height: 70px;
+      }
+
+      .tentacle:nth-child(4) {
+        animation-delay: 0.45s;
+        height: 75px;
+      }
+
+      .tentacle:nth-child(5) {
+        animation-delay: 0.3s;
+        height: 70px;
+      }
+
+      .tentacle:nth-child(6) {
+        animation-delay: 0.15s;
+        height: 65px;
+      }
+
+      .tentacle:nth-child(7) {
+        animation-delay: 0s;
+        height: 55px;
+      }
+
+      /* Glow effect */
+      .glow {
+        position: absolute;
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100px;
+        height: 100px;
+        background: radial-gradient(circle, rgba(0, 188, 212, 0.3) 0%, transparent 70%);
+        border-radius: 50%;
+        animation: glow-pulse 2s ease-in-out infinite;
+      }
+
+      /* Animations */
+      @keyframes float {
 
         0%,
-        60%,
         100% {
-          transform:
-            rotateX(50deg) rotateY(0deg) rotateZ(45deg) translateZ(0);
+          transform: translateY(0);
+        }
+
+        50% {
+          transform: translateY(-15px);
+        }
+      }
+
+      @keyframes pulse {
+
+        0%,
+        100% {
+          transform: translateX(-50%) scaleX(1);
+        }
+
+        50% {
+          transform: translateX(-50%) scaleX(0.95);
+        }
+      }
+
+      @keyframes wave {
+
+        0%,
+        100% {
+          transform: rotate(0deg);
         }
 
         25% {
-          transform:
-            rotateX(50deg) rotateY(0deg) rotateZ(45deg) translateZ(5px);
+          transform: rotate(8deg);
+        }
+
+        75% {
+          transform: rotate(-8deg);
         }
       }
 
-      @keyframes movedown {
+      @keyframes glow-pulse {
 
         0%,
-        60%,
         100% {
-          transform:
-            rotateX(50deg) rotateY(0deg) rotateZ(45deg) translateZ(0);
+          opacity: 0.5;
+          transform: translateX(-50%) scale(1);
         }
 
-        25% {
-          transform:
-            rotateX(50deg) rotateY(0deg) rotateZ(45deg) translateZ(-5px);
+        50% {
+          opacity: 0.8;
+          transform: translateX(-50%) scale(1.1);
+        }
+      }
+
+      .loading-text {
+        margin-top: 10px;
+        animation: fade 2s ease-in-out infinite;
+      }
+
+      @keyframes fade {
+
+        0%,
+        100% {
+          opacity: 0.5;
+        }
+
+        50% {
+          opacity: 1;
         }
       }
     </style>
     <div class="preloader-wrap">
-      <div class="preloader"><i class="layer"></i><i class="layer"></i><i class="layer"></i></div>
-      <span>Loading</span>
+      <div class="jellyfish">
+        <div class="glow"></div>
+        <div class="jelly-head"></div>
+        <div class="tentacles">
+          <div class="tentacle"></div>
+          <div class="tentacle"></div>
+          <div class="tentacle"></div>
+          <div class="tentacle"></div>
+          <div class="tentacle"></div>
+          <div class="tentacle"></div>
+          <div class="tentacle"></div>
+        </div>
+      </div>
+      <div class="loading-text">JELLYFISH</div>
     </div>
   </div>
   <!-- built files will be auto injected -->
