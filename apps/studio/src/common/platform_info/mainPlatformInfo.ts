@@ -46,7 +46,7 @@ export function mainPlatformInfo(): IPlatformInfo {
 
   const updatesDisabled = !!p.env.BEEKEEPER_DISABLE_UPDATES
 
-  // previous builds of Beekeeper Studio required native libs for Oracle,
+  // previous builds of Jellyfish required native libs for Oracle,
   // but now it should work on all platforms
   // FIXME: Windows ARM - this needs to be disabled
   // as instant client not available there

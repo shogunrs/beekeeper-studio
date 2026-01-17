@@ -11,7 +11,7 @@
         v-kbd-trap="true"
       >
         <h3 class="dialog-c-title has-icon">
-          <i class="material-icons">stars</i> <span>Upgrade Beekeeper Studio</span>
+          <i class="material-icons">stars</i> <span>Upgrade Jellyfish</span>
         </h3>
 
         <a

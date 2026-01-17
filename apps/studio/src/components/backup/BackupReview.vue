@@ -7,7 +7,7 @@
       <div class="review-container">
         <div class="card card-flat padding text-center">
           <div class="command-note">
-            Beekeeper Studio will execute the following command. If you would prefer to run the backup yourself, you can copy the command to the clipboard.
+            Jellyfish will execute the following command. If you would prefer to run the backup yourself, you can copy the command to the clipboard.
           </div>
           <button
             @click.prevent="$emit('finish')"

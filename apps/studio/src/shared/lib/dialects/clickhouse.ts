@@ -89,7 +89,7 @@ export const ClickHouseData: DialectData = {
   versionWarnings: [
     {
       minVersion: { major: 23, minor: 0, patch: 0},
-      warning: "FYI: Beekeeper Studio supports ClickHouse v23+, you may experience buggy behavior for earlier versions"
+      warning: "FYI: Jellyfish supports ClickHouse v23+, you may experience buggy behavior for earlier versions"
     }
   ],
   disabledFeatures: {

@@ -21,14 +21,14 @@
       </div>
       <div v-else-if="!plugin.loadable" class="plugin-status">
         <p>
-          Plugin "{{ plugin.manifest.name }}" isn’t compatible with this version of Beekeeper Studio.
+          Plugin "{{ plugin.manifest.name }}" isn’t compatible with this version of Jellyfish.
           It requires version {{ plugin.manifest.minAppVersion }} or newer.
         </p>
 
         <p>To fix this:</p>
 
         <ol>
-          <li>Upgrade your Beekeeper Studio.</li>
+          <li>Upgrade your Jellyfish.</li>
           <li>Or install an older plugin version manually (see <a href="https://docs.beekeeperstudio.io/user_guide/plugins/#installing-a-specific-plugin-version">instructions</a>).</li>
         </ol>
       </div>

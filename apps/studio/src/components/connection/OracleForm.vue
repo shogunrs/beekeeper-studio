@@ -102,7 +102,7 @@ export default Vue.extend({
     },
     restartNotification() {
       return new Noty({
-        text: "You must restart Beekeeper Studio for this change to take effect",
+        text: "You must restart Jellyfish for this change to take effect",
         layout: 'bottomRight',
         closeWith: ['button'],
         buttons: [

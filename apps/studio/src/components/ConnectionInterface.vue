@@ -125,7 +125,7 @@
           </template>
         </div>
 
-        <small class="app-version"><a href="https://www.beekeeperstudio.io/releases/latest">Beekeeper Studio {{ version
+        <small class="app-version"><a href="https://www.beekeeperstudio.io/releases/latest">Jellyfish {{ version
             }}</a></small>
       </div>
     </div>

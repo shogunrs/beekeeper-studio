@@ -102,7 +102,7 @@ export function menuItems(actionHandler: IMenuActionHandler, settings: IGroupedU
     // help
     about: {
       id: 'about',
-      label: 'About Beekeeper Studio',
+      label: 'About Jellyfish',
       click: actionHandler.about
     },
     devtools: {

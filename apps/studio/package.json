@@ -1,12 +1,12 @@
 {
-  "name": "beekeeper-studio",
+  "name": "jellyfish",
   "version": "5.5.3",
   "private": true,
   "description": "An easy-to use SQL query editor and database UI for Mac, Windows, and Linux",
   "author": {
-    "name": "Beekeeper Studio Team",
-    "email": "matthew@rathbonelabs.com",
-    "url": "https://beekeeperstudio.io"
+    "name": "Jellyfish Team",
+    "email": "contact@jellyfish.app",
+    "url": "https://jellyfish.app"
   },
   "scripts": {
     "build:esbuild": "node ./esbuild.mjs",

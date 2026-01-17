@@ -41,7 +41,7 @@ export default Vue.extend({
         queue: 'download'
       }),
       installNotification: new Noty({
-        text: "Update downloaded. Restart Beekeeper Studio to install",
+        text: "Update downloaded. Restart Jellyfish to install",
         layout: 'bottomRight',
         timeout: false,
         closeWith: ['button'],

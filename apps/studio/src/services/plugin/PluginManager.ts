@@ -136,7 +136,7 @@ export default class PluginManager {
 
       if (!this.isPluginLoadable(info.latestRelease.manifest)) {
         throw new NotSupportedPluginError(
-          `${info.latestRelease.manifest.name} requires Beekeeper Studio ≥ 5.5.0. Please update the app first.`
+          `${info.latestRelease.manifest.name} requires Jellyfish ≥ 5.5.0. Please update the app first.`
         );
       }
 

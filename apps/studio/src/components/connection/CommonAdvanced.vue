@@ -94,7 +94,7 @@
         >
           <i class="material-icons">error_outline</i>
           <div>
-            SSH Agent Forwarding is not possible with the Snap version of Beekeeper Studio due to the security model of Snap apps.
+            SSH Agent Forwarding is not possible with the Snap version of Jellyfish due to the security model of Snap apps.
             <external-link :href="enableSshLink">
               Read more
             </external-link>

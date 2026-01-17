@@ -20,7 +20,7 @@ const errorMappings = {
   'oracle': [
     {
       pattern: 'thin mode',
-      help: "You likely need to enable 'thick mode' which supports all connection types. Please provide the path to the Oracle Instant client to Beekeeper Studio in the box above",
+      help: "You likely need to enable 'thick mode' which supports all connection types. Please provide the path to the Oracle Instant client to Jellyfish in the box above",
       link: "https://docs.beekeeperstudio.io/user_guide/connecting/oracle-database/"
     }
   ]

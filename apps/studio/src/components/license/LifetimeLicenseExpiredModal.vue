@@ -5,7 +5,7 @@
         <div class="dialog-c-title">Your license has ended</div>
         <div>
           Your license has ended. But you can continue using all features using
-          Beekeeper Studio version {{ maxAllowedVersion }} or later.
+          Jellyfish version {{ maxAllowedVersion }} or later.
         </div>
       </div>
       <div class="vue-dialog-buttons">

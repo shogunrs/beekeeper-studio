@@ -33,7 +33,7 @@ JOIN
 -- <= Click the <> Icon in the right sidebar to see saved queries
 
 -- Links:
--- Beekeeper Studio Docs: https://docs.beekeeperstudio.io
+-- Jellyfish Docs: https://docs.beekeeperstudio.io
 -- Website: https://beekeeperstudio.io
 
 `, true)

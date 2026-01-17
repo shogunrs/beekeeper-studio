@@ -13,7 +13,7 @@
         <div class="plugin-manager-content">
           <div class="plugin-list-container">
             <div class="description">
-              Manage and install plugins in Beekeeper Studio.
+              Manage and install plugins in Jellyfish.
             </div>
             <error-alert :error="errors" />
             <plugin-list
@@ -90,7 +90,7 @@ export default Vue.extend({
     pluginManagerStatus: {
       async handler() {
         if (this.pluginManagerStatus === "failed-to-initialize") {
-          this.errors = ["Plugin system was not initialized properly. Please restart Beekeeper Studio to continue using plugins or report this issue."]
+          this.errors = ["Plugin system was not initialized properly. Please restart Jellyfish to continue using plugins or report this issue."]
         } else {
           this.errors = null
         }

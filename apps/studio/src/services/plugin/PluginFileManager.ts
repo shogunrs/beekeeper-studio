@@ -120,7 +120,7 @@ export default class PluginFileManager {
         signal: options.signal,
         fileName: `${pluginId}-${release.manifest.version}-${Date.now()}-tmp.zip`,
         headers: {
-          "User-Agent": "Beekeeper Studio",
+          "User-Agent": "Jellyfish",
         },
       });
 

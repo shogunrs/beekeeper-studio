@@ -78,7 +78,7 @@
       <div class="alert alert-danger" v-if="!plugin.loadable && plugin.installed">
         <i class="material-icons">error_outline</i>
         <div class="alert-body expand">
-          <span>This plugin was not loaded because it requires Beekeeper Studio {{ plugin.minAppVersion }}+. Please upgrade the app or <a href="https://docs.beekeeperstudio.io/user_guide/plugins/#installing-a-specific-plugin-version">install a compatible plugin version</a>.</span>
+          <span>This plugin was not loaded because it requires Jellyfish {{ plugin.minAppVersion }}+. Please upgrade the app or <a href="https://docs.beekeeperstudio.io/user_guide/plugins/#installing-a-specific-plugin-version">install a compatible plugin version</a>.</span>
         </div>
       </div>
       <div class="alert alert-danger" v-if="plugin.error">

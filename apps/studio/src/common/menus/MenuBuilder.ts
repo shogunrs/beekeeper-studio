@@ -67,7 +67,7 @@ export default class extends DefaultMenu {
     const appMenu: Electron.MenuItemConstructorOptions[] = []
     if (this.platformInfo.isMac) {
       appMenu.push({
-        label: "Beekeeper Studio",
+        label: "Jellyfish",
         submenu: [
           this.menuItems.about,
           { role: 'services' },

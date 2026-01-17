@@ -14,8 +14,8 @@ const certSubject = 'SERIALNUMBER=803010247, C=US, ST=Texas, L=Dallas, O="Rathbo
 
 
 module.exports = {
-  appId: "io.beekeeperstudio.desktop",
-  productName: "Beekeeper Studio",
+  appId: "io.jellyfish.desktop",
+  productName: "Jellyfish",
   releaseInfo: {
     releaseNotesFile: "build/release-notes.md"
   },
@@ -185,7 +185,7 @@ module.exports = {
     ]
   },
   rpm: {
-    publish: [ 'github' ],
+    publish: ['github'],
     fpm: rpmFpmOptions,
   },
   snap: {
